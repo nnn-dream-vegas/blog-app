@@ -1,0 +1,75 @@
+
+// 投稿フォーム
+#blog_create{
+  height: 400px;
+  background-color: #EEEEEE;
+  border: ridge;
+}
+
+
+#send_btn{
+  background-color: #3399FF;;
+  color: white;
+  width: 100px;
+  height: 50px;
+  float: right;
+}
+#send_btn:hover{
+  background-color: #696969;
+
+}
+
+// top画面のボタン
+.show_btn{
+     display:block;
+     width: 250px;
+     height:50px;
+     line-height: 50px;
+     color: #FFF;
+     text-align: center;
+     background-color: #f39800; /*ボタン色*/
+     border-bottom: solid 6px #ec6c00; /*下線色*/
+     border-radius: 5px; /*角丸*/
+}
+.show_btn:hover{
+     background-color: #f9c500;/*ボタン色*/
+     border-bottom: solid 6px #f39800; /*下線色*/
+}
+.show_btn:active {
+     margin-top: 6px;
+     border-bottom: none;
+     -webkit-transform: translateY(6px);/*下移動*/
+}
+
+// 編集削除のボタン
+.action_btn li{
+  display: inline-block;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 10px;
+  border: groove;
+}
+
+.mypage_btn{
+  background-color: #3399FF;
+  color: white;
+  border: ridge;
+}
+
+// ログイン画面
+.actions input{
+  background-color: #3399FF; //薄い青
+  color:white;
+  width: 90px;
+  height: 60px;
+  float: right;
+  border: ridge;
+}
+
+
+
+

@@ -1,0 +1,6 @@
+<div class="container">
+  <h4>マイページ</h4>
+  <% @blogs.each do |blog| %>
+  <%=  render partial: 'blog/blog', locals: { blog: blog } %>
+<% end %>
+</div>

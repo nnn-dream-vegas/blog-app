@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
-  def new
+  def show
+    users = User.find(params[:id])
+    @blogs = users
   end
 end

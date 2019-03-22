@@ -17,12 +17,15 @@
     <header>
       <nav class="#ffa726 orange lighten-1">
         <div class="nav-wrapper">
-          <a href="/" class="brand-logo">ぶろぐ</a>
+          <a href="/" class="brand-logo">B.B.BLOG</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if user_signed_in? %>
             <li><a href="/" ><%= link_to "サインアウト", destroy_user_session_path, method: :delete %></a></li>
-            <li><a href="blog/new" class="new_btn">投稿する</a></li>
+            <li><a href="blogs/new"><%= link_to "投稿する" , new_blog_path, method: :get%></a></li>
+            <li><a href="" class="login_user"><%= current_user.nickname %></a></li>
+
             <% else %>
+
             <li><a href="sessions/new/"><%= link_to "サインイン",new_user_session_path, method: :get %></a></li>
             <% end %>
           </ul>
