@@ -5,18 +5,27 @@ class BlogsController < ApplicationController
   end
 
   def new
+    @blog = Blog.new
+
   end
 
   def create
-    Blog.create(image:blog_params[:image],content:blog_params[:content],user_id:current_user.id)
+    @blog = Blog.new(blog_params)
+    @blog.save
   end
 
   def show
     @blog =Blog.find(params[:id])
   end
 
-
   def edit
+    @blog = Blog.find(params[:id])
+  end
+
+  def update
+    @blog = Blog.find(params[:id])
+    @blog.update(blog_params)
+    redirect_to root_path
   end
 
   def destroy
@@ -29,8 +38,9 @@ class BlogsController < ApplicationController
 
 
   private
+
   def blog_params
-    params.permit(:image,:content,:user_id)
+    params.require(:blog).permit(:image,:content).merge(user_id: current_user.id)
   end
 
 end

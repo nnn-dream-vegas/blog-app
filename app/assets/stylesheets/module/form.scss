@@ -1,20 +1,47 @@
 
-// 投稿フォーム
-#blog_create{
-  height: 400px;
-  background-color: #EEEEEE;
-  border: ridge;
+h4 {
+  position: relative;
+  padding: 5px 26px 5px 42px;
+  background: #fff0d9;
+  font-size: 20px;
+  margin-left: -33px;
+  line-height: 1.3;
+  border-bottom: solid 3px orange;
+  z-index:-2;
+  color: #FF9933
 }
 
 
-#send_btn{
+
+// フォーム
+
+
+.form_create{
+  height: 400px;
+  background-color: white;
+
+  .form_image{
+    height: 40px;
+    border: 1px solid #778899;
+  }
+
+  &_content{
+  height: 360px;
+  width: 100%;
+  position-bottom: 0;
+ }
+}
+
+
+
+.send_btn{
   background-color: #3399FF;;
   color: white;
   width: 100px;
   height: 50px;
   float: right;
 }
-#send_btn:hover{
+.send_btn:hover{
   background-color: #696969;
 
 }
@@ -28,7 +55,7 @@
      color: #FFF;
      text-align: center;
      background-color: #f39800; /*ボタン色*/
-     border-bottom: solid 6px #ec6c00; /*下線色*/
+     border-bottom: solid 3px #ec6c00; /*下線色*/
      border-radius: 5px; /*角丸*/
 }
 .show_btn:hover{
@@ -36,9 +63,7 @@
      border-bottom: solid 6px #f39800; /*下線色*/
 }
 .show_btn:active {
-     margin-top: 6px;
-     border-bottom: none;
-     -webkit-transform: translateY(6px);/*下移動*/
+     -webkit-transform: translateY(3px);/*下移動*/
 }
 
 // 編集削除のボタン

@@ -1,12 +1,4 @@
 <div class="container">
-  <div class="blog_create">
-  <%= form_tag('/blogs', method: :post) do %>
-    <h4>
-      記事編集フォーム
-    </h4>
-    <input placeholder="写真" type="text" name="image">
-    <textarea id="blog_create" cols="30" name="content" placeholder="今日あったことは？" rows="10"></textarea>
-    <input id="send_btn" type="submit" value="投稿する">
-  <% end %>
- </div>
+  <h4>編集フォーム</h4>
+  <%= render partial: 'form' %>
 </div>
