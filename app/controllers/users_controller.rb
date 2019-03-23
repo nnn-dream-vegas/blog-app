@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    users = User.find(params[:id])
-    @blogs = users
+    @user = User.find(params[:id])
+    @user = current_user.blogs.order(created_at: 'DESC')
   end
 end

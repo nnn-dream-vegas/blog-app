@@ -1,22 +1,19 @@
 <div class ="container">
    <div class="contents">
     <%= simple_format(@blog.content) %>
-      <hr color=#DDDDDD>
     <% if user_signed_in? && current_user.id == @blog.user_id %>
       <ul class="action_btn">
         <li>
-          <%= link_to '編集', "/blogs/#{@blog.id}/edit", method: :get,style:"color:white;" %>
+          <%= link_to '編集する', "/blogs/#{@blog.id}/edit", method: :get,style:"color:white;" %>
         </li>
         <li>
-          <%= link_to '削除', blog_path, method: :delete,style:"color:white;"%>
+          <%= link_to '削除する', blog_path, method: :delete,style:"color:white;"%>
         </li>
       </ul>
     <% end %>
-    <span class="name">
-      <a href="/users/<%= @blog.user.id %>">
-        <span>投稿者</span><%= @blog.user.nickname %>
-      </a>
-    </span>
+    <div class="show_bloger">
+      <%= @blog.user.nickname %><span>さんのブログ</span>
+   </div>
   </div>
   </div>
 </div>

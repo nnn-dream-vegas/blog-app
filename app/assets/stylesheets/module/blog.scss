@@ -22,6 +22,7 @@ body{
 }
 
 
+
 .container{
   .contents{
   overflow: scroll;
@@ -29,4 +30,16 @@ body{
   background-color: #FFFFCC;
   border: 1px outset #EEEEEE ;
  }
+}
+
+.current_bloger{
+  color: #FFA500;
+    & span{
+      color: #136FFF  ;
+ }
+}
+
+// showアクション
+.show_bloger{
+  color: #FFA500;
 }

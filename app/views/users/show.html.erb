@@ -1,6 +1,12 @@
 <div class="container">
-  <h4>マイページ</h4>
-  <% @blogs.each do |blog| %>
-  <%=  render partial: 'blog/blog', locals: { blog: blog } %>
-<% end %>
+  <h4><%= current_user.nickname %> <span>さんのマイページ</span></h4>
+    <% @user.each do |user| %>
+    <div class="contents">
+      <%= user.text %>
+    <div class="show_btn">
+    <%= link_to "このブログを読む", blog_path(user.id), method: :get,style:"color:white;"%>
+    </div>
+   </div>
+  <% end %>
+  </div>
 </div>
