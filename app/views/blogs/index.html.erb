@@ -1,18 +1,17 @@
-<div class="container">
-  <% @blogs.each do |blog| %>
- <div class="contents">
-  <%= simple_format(blog.text) %>
-  <div class="contents_image">
-    <%= blog.image %>
-  </div>
-  <hr color=#DDDDDD>
-  <div class="show_btn">
-    <%= link_to "このブログを読む", blog_path(blog.id), method: :get,style:"color:white;"%>
-  </div>
-  <div class="current_bloger">
-    <span>投稿者</span><%= blog.user.nickname %>
-  </div>
- </div>
+<div class="wrapper">
+  <div class="container">
+    <% @blogs.each do |blog| %>
+   <div class="contents">
+    <%= simple_format(blog.text) %>
+    <hr color=#DDDDDD>
+      <div class="show_btn">
+        <%= link_to "このブログを読む", blog_path(blog.id), method: :get,style:"color:white;"%>
+      </div>
+      <div class="current_bloger">
+        <span>投稿者</span><%= blog.user.nickname %>
+      </div>
+   </div>
 
 <% end %>
+  </div>
 </div>
