@@ -1,0 +1,26 @@
+<div class ="container">
+   <div class="contents">
+    <%= simple_format(@blog.content) %>
+    <% if @blog.image.file.nil? %>
+       <%= image_tag "no-thumbnail.png",:size =>'150x150' %>
+      <% else %>
+    <div class="contents_image">
+    <%= image_tag @blog.image.url ,:size =>'400x400' %>
+    </div>
+    <% end %>
+    <% if user_signed_in? && current_user.id == @blog.user_id %>
+      <ul class="action_btn">
+        <li>
+          <%= link_to '編集する', "/blogs/#{@blog.id}/edit", method: :get,style:"color:white;" %>
+        </li>
+        <li>
+          <%= link_to '削除する', blog_path, method: :delete,style:"color:white;"%>
+        </li>
+      </ul>
+    <% end %>
+    <div class="show_bloger">
+      <%= @blog.user.nickname %><span>さんのブログ</span>
+   </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<%= form_for @blog do |f| %>
+<div class="form_create">
+  <%=f.text_field :text , placeholder: '件名' %>
+  <%= f.text_area :content, placeholder: '今日あったことは？', class: "form_create_content" %>
+  <%=f.label "ブログに写真を載せる", class: 'form_image'%>
+  <%= f.file_field :image %>
+    <%= f.submit value: '投稿' ,class:"send_btn"%>
+<% end %>
+</div>

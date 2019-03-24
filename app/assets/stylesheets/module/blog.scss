@@ -1,0 +1,54 @@
+// headerのscss
+
+.header{
+  width: 100%;
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+}
+
+.brand-logo{
+  left: 50px;
+}
+#nav-mobile{
+  margin-right: 30px;
+}
+
+// bodyのscss
+
+
+body{
+  background: image-url("017.png");
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+
+.container{
+  overflow: scroll;
+  height: 800px;
+  background-color: #FFFFEE;
+
+
+  .contents{
+  overflow: scroll;
+  margin-top: 20px;
+  background-color: #FFFFCC;
+  border: 1px outset #EEEEEE ;
+ }
+}
+
+.current_bloger{
+  color: #FFA500;
+    & span{
+      color: #136FFF  ;
+ }
+}
+
+// showアクション
+.show_bloger{
+  color: #FFA500;
+}

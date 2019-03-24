@@ -1,0 +1,137 @@
+
+h2{
+  text-align: center;
+}
+
+h4 {
+  position: relative;
+  padding: 5px ;
+  text-align: center;
+  background: #fff0d9;
+  font-size: 20px;
+  margin-left: -33px;
+  line-height: 1.3;
+  border-bottom: solid 3px orange;
+  color: #FF9933
+}
+
+
+
+// 投稿フォーム
+
+
+.form_create{
+  height: 718px;
+  background-color: white;
+  border: 1px solid #778899;
+
+  .form_image{
+    color: #FF6347;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+
+  &_content{
+  height: 560px;
+  width: 100%;
+  border: none;
+ }
+}
+
+
+
+.send_btn{
+  background-color: #3399FF;;
+  color: white;
+  width: 200px;
+  height: 50px;
+  float: right;
+  margin-right: 40px;
+}
+.send_btn:hover{
+  background-color: #696969;
+
+}
+
+// top画面のボタン
+.show_btn{
+     float: right;
+     display:block;
+     width: 250px;
+     height:50px;
+     line-height: 50px;
+     color: #FFF;
+     text-align: center;
+     background-color: #f39800; /*ボタン色*/
+     border-bottom: solid 3px #ec6c00; /*下線色*/
+     border-radius: 5px; /*角丸*/
+}
+.show_btn:hover{
+     background-color: #f9c500;/*ボタン色*/
+     border-bottom: solid 6px #f39800; /*下線色*/
+}
+.show_btn:active {
+     -webkit-transform: translateY(3px);/*下移動*/
+}
+
+// 編集削除のボタン
+.action_btn li{
+  display: inline-block;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  letter-spacing: 5px;
+  line-height: 30px;
+  font-size: 15px;
+  margin-left: 10px;
+  border: groove;
+  float: right;
+}
+
+.mypage_btn{
+  background-color: #3399FF;
+  color: white;
+  border: ridge;
+}
+
+// ログイン画面
+.login_btn input{
+     float: right;
+     display:block;
+     width: 250px;
+     height:50px;
+     line-height: 50px;
+     color: #FFF;
+     text-align: center;
+     background-color: #f39800; /*ボタン色*/
+     border-bottom: solid 3px #ec6c00; /*下線色*/
+     border-radius: 5px;
+     margin-right: 460px;
+}
+
+
+.sign_up_btn input{
+     float: right;
+     display:block;
+     width: 250px;
+     height:50px;
+     line-height: 50px;
+     color: #FFF;
+     text-align: center;
+     background-color: #f39800; /*ボタン色*/
+     border-bottom: solid 3px #ec6c00; /*下線色*/
+     border-radius: 5px;
+     margin-right: 460px;
+}
+
+.field{
+  text-align: center;
+  padding-top: 80px;
+  width: 250px;
+  margin: auto;
+  line-height: 20px;
+
+}
+
+
