@@ -2,6 +2,7 @@
 
 .header{
   width: 100%;
+  position: fixed;
   background: linear-gradient(to right, #ffb03c, #ff708d);
 }
 
@@ -20,6 +21,7 @@ body{
   height: 100%;
   background-size: cover;
   width: 100%;
+
 }
 
 .wrapper{
@@ -31,6 +33,7 @@ body{
   overflow: scroll;
   height: 800px;
   background-color: #FFFFEE;
+  padding-top: 80px;
 
 
   .contents{
